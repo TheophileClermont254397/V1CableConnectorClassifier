@@ -7,7 +7,7 @@ from streamlit_cropper import st_cropper
 
 @st.cache_resource
 def load_my_model():
-    return tf.keras.models.load_model("../models/cable_classifier_mobilenetv2")
+    return tf.keras.models.load_model("models/cable_classifier_mobilenetv2")
 
 model = load_my_model()
 
