@@ -67,7 +67,7 @@ if uploaded_file is not None:
     image = Image.open(uploaded_file).convert("RGB")
 
     st.subheader("Original Image")
-    st.image(image, caption="Original image", use_container_width=True)
+    st.image(image, caption="Original image", use_column_width=True)
 
     use_crop = st.checkbox("Crop image before prediction", value=False)
 
@@ -83,7 +83,7 @@ if uploaded_file is not None:
         )
 
         st.subheader("Cropped Image")
-        st.image(cropped_img, caption="Cropped image", use_container_width=True)
+        st.image(cropped_img, caption="Cropped image", use_column_width=True)
 
         image_to_predict = cropped_img
 
